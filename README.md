@@ -34,7 +34,13 @@ Several different algorithms are available, and each varies in solution accuracy
 ## Installation & Usage
 This script requires Python to be installed. 
 
-When you've done that, you can install and start the program using IPython in terminal after navigating to the directory that contains the necessary files:
+When you've done that, you can download the files by cloning the repository. Cloning the repository requires <a href="https://git-scm.com" target="_blank">Git</a>.
+
+In your terminal:
+```bash
+git clone https://github.com/lifelinh/8-Puzzle.git
+```
+Next, start the program using IPython in terminal after navigating to the directory that contains the repository files.
 ```bash
 ipython
 %run eight_puzzle.py
@@ -46,7 +52,7 @@ After that, the solver can be used with the `eight_puzzle()` function, which tak
   A string of length 9, which contains digits 0-8. They are the order in which the tiles appear in the initial board state, starting from the upper left and reading across the row. The empty tile is represented by `0`, while the rest of the numbers represent the order of the tile in the solution. This parameter is required.
   
   For example, the below board would be represented as `"345210867"`:
-  ```
+  ```md
   |3|4|5|
   |2|1|_|
   |8|6|7|
@@ -71,7 +77,7 @@ After that, the solver can be used with the `eight_puzzle()` function, which tak
 </details>
 
 ### Example
-```
+```md
 |1|7|4|
 |3|8|2|
 |6|5|_|
