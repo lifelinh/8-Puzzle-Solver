@@ -5,7 +5,6 @@
 #
 
 from searcher import *
-from timer import *
 
 def create_searcher(algorithm, depth_limit = -1, heuristic = None):
     """ a function that creates and returns an appropriate
@@ -61,16 +60,12 @@ def eight_puzzle(init_boardstr, algorithm, depth_limit = -1, heuristic = None):
         return
 
     soln = None
-    timer = Timer(algorithm)
-    timer.start()
     
     try:
         soln = searcher.find_solution(init_state)
     except KeyboardInterrupt:
         print('Search terminated.')
 
-    timer.end()
-    print(str(timer) + ', ', end='')
     print(searcher.num_tested, 'states')
 
     if soln == None:
