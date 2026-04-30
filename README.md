@@ -86,7 +86,7 @@ To solve the above puzzle using an A* algorithm with heuristic `h2`:
 ```bash
 eight_puzzle("174382650", "A*", heuristic = h2)
 ```
-The result will be a solution that requires 10 moves. You can press y to display the steps needed to reach the goal state.
+The result will be a solution that requires 10 moves. You can press `y` to display the steps needed to reach the goal state, or `n` to use the function again.
 ## Exit
 To close the program, use `exit` in the terminal.
 ## Note
