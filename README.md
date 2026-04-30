@@ -89,3 +89,5 @@ eight_puzzle("174382650", "A*", heuristic = h2)
 The result will be a solution that requires 10 moves. You can press y to display the steps needed to reach the goal state.
 ## Exit
 To close the program, use `exit` in the terminal.
+## Note
+This were originally created as a final project for [CAS CS 111](https://www.bu.edu/academics/cas/courses/cas-cs-111/): Introduction to Computer Science 1 at Boston University during the Summer-2 2024 semester. 
