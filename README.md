@@ -32,7 +32,7 @@ Several different algorithms are available, and each varies in solution accuracy
 </details>
 
 ## Installation & Usage
-This script requires Python to be installed. 
+This project requires Python to be installed. 
 
 When you've done that, you can download the files by cloning the repository. Cloning the repository requires <a href="https://git-scm.com" target="_blank">Git</a>.
 
