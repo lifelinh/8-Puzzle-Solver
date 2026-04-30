@@ -94,4 +94,4 @@ If a search is taking too long and you would like to terminate it, press `Ctrl` 
 To close the program, use `exit` in the terminal.
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
-> This repository was originally created for and submitted as a final project for [CAS CS 111](https://www.bu.edu/academics/cas/courses/cas-cs-111/): Introduction to Computer Science 1 at Boston University during the Summer-2 2024 semester. 
+> This was originally created for and submitted as my final project for [CAS CS 111](https://www.bu.edu/academics/cas/courses/cas-cs-111/): Introduction to Computer Science 1 at Boston University during the Summer-2 2024 semester. 
