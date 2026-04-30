@@ -90,7 +90,8 @@ The result will be a solution that requires 10 moves. You can press `y` to displ
 
 If a search is taking too long and you would like to terminate it, press `Ctrl` + `C` to interrupt the process. This is likely to happen when using breadth-first search on complex initial states.
 
-## Exit
+### Stopping Usage
 To close the program, use `exit` in the terminal.
-## Note
-This repository originally created for and submitted as a final project for [CAS CS 111](https://www.bu.edu/academics/cas/courses/cas-cs-111/): Introduction to Computer Science 1 at Boston University during the Summer-2 2024 semester. 
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+> This repository was originally created for and submitted as a final project for [CAS CS 111](https://www.bu.edu/academics/cas/courses/cas-cs-111/): Introduction to Computer Science 1 at Boston University during the Summer-2 2024 semester. 
