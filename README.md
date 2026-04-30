@@ -15,19 +15,19 @@ Several different algorithms are available, and each varies in solution accuracy
 </details>
 <details>
   <summary>Depth-First Search</summary>
-
+  
   Depth-first search algorithms explore as deep as possible, and backtrack if a dead-end state is reached. In this case, the algorithm backtracks if a previously encountered state gets rediscovered by the searcher. This uses less memory, but it rarely will find an optimal solution. Search speed is also highly variable.
 
   More info: https://en.wikipedia.org/wiki/Depth-first_search
 </details>
 <details>
   <summary>Greedy Search</summary>
-
+  
   Greedy algorithms will explore the state that seems closest to the goal state. A heuristic must be chosen for the algorithm to measure "closeness" of a state to the goal state. This usually results in fast solutions, but it is not guaranteed to return an optimal path.
 </details>
 <details>
   <summary>A* Search</summary>
-
+  
   A* Search is a variation of the Greedy algorithm, but it also accounts for the length of the current path. This usually is able to find optimal solutions if the heuristic is accurate.
 </details>
 
@@ -41,40 +41,45 @@ ipython
 ```
 After that, the solver can be used with the `eight_puzzle()` function, which takes parameters `init_boardstr, algorithm, depth_limit, heuristic`.
 <details>
-  <summary>`init_boardstr`</summary>
+  <summary>init_boardstr</summary>
+  
   A string of length 9, which contains digits 0-8. They are the order in which the tiles appear in the initial board state, starting from the upper left and reading across the row. The empty tile is represented by `0`, while the rest of the numbers represent the order of the tile in the solution. This parameter is required.
-
-  For example, the below board would be represented as `345210867`:
+  
+  For example, the below board would be represented as `"345210867"`:
+  ```
   |3|4|5|
   |2|1|_|
   |8|6|7|
+```
 </details>
 <details>
-  <summary>`algorithm`</summary>
-  A string that contains the name of the search algorithm to solve the puzzle. Accepted inputs are `BFS` for breadth-first search, `DFS` for depth-first search, `Greedy` for greedy search, and `A*` for A* search. This parameter is required.
+  <summary>algorithm</summary>
+  
+  A string that contains the name of the search algorithm to solve the puzzle. Accepted inputs are `"BFS"` for breadth-first search, `"DFS"` for depth-first search, `"Greedy"` for greedy search, and `"A*"` for A* search. This parameter is required.
 </details>
 <details>
-  <summary>`depth_limit`</summary>
+  <summary>depth_limit</summary>
+  
   An integer that represents how deep search will proceed before backtracking. This parameter is not required; it will default to -1 if left blank, which will be interpreted as having no depth limit.
 </details>
 <details>
-  <summary>`heuristic`</summary>
+  <summary>heuristic</summary>
+  
   A function that represents the heuristic to use. This is required for greedy and A* search algorithms to work properly. Available heuristics are `h1` and `h2`.
-
   - `h1` measures closeness to the goal state by counting the number of tiles that are in the wrong position. 
   - `h2` measures closeness to the goal state by measuring the Manhattan distance of every tile in their current position to their correct position. 
 </details>
 
 ### Example
+```
 |1|7|4|
 |3|8|2|
 |6|5|_|
-
+```
 To solve the above puzzle using an A* algorithm with heuristic `h2`:
 ```bash
 eight_puzzle("174382650", "A*", heuristic = h2)
 ```
-
 The result will be a solution that requires 10 moves. You can press y to display the steps needed to reach the goal state.
 ## Exit
 To close the program, use `exit` in the terminal.
